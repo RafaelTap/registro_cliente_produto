@@ -5,7 +5,7 @@ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org
 
 	<persistence-unit name="registro_de_pedidos">
 	
-	 <class>registro_de_pedidos.Pedidos</class>
+	 <class>registro_de_pedidos.Produto</class>
     <class>registro_de_pedidos.Cliente</class>
     
     <properties>
