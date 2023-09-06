@@ -29,8 +29,7 @@ public class Cliente implements Serializable {
 	@Column (name = "email", length = 45)
 	String email;
 
-	@OneToMany
-	// *** verificar, cascade, fetch, mappedby ... ***
+	@OneToMany (cascade=CascadeType.ALL,fetch=FetchType.LAZY)
 	Set<Produto> produtos = new HashSet<>();
 
 	public int getIDcliente() {
