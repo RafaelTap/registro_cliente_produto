@@ -26,9 +26,9 @@ public class Produto implements Serializable {
 	@Column (name = "cliente", length = 45)
 	Cliente cliente;
 	
-	@Column
-	// *** verificar anotaÃ§Ã£o de data ***
-	Date date;
+	@Column (name ="data")
+	@Temporal (value = TemporalType.TIMESTAMP)
+	private Date date;
 	
 	@Column (name = "descricao", length = 45)
 	String descricao;
