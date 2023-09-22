@@ -1,6 +1,10 @@
 package pedido_cliente;
 
-public class Main {
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class CriarCliente {
 
 	public static void main(String[] args) {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("regitro_de_pedidos");
@@ -9,6 +13,8 @@ public class Main {
 		DAO dao = new DAO(em);
 		
 		Cliente cliente = dao.createCliente("" , "");
+
+		dao.closeEntityManager();
 
 	}
 }

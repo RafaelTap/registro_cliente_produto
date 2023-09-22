@@ -23,7 +23,7 @@ private EntityManager em;
 	}
 	
 	// verificar se é criação de produto ou adição de produto em cliente. (addProduto)
-	public Produto createProduto(Cliente cliente, Date data, String descricao, double valor) {
+	public Produto createProduto(Cliente cliente, String descricao, double valor) {
 		Produto produto = new Produto();
 
 		produto.setDescricao(entrada.next());
