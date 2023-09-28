@@ -5,8 +5,8 @@ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org
 
 	<persistence-unit name="registro_de_pedidos">
 	
-	 <class>registro_de_pedidos.Produto</class>
-    <class>registro_de_pedidos.Cliente</class>
+	 <class>pedido_cliente.Produto</class>
+    <class>pedido_cliente.Cliente</class>
     
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cliente_produto"/>
